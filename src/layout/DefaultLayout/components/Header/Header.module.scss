@@ -1,5 +1,5 @@
 .header {
-  height: 84px;
+  height: var(--height-header);
   display: flex;
   align-items: center;
   position: fixed;
@@ -85,6 +85,40 @@
         }
       }
     }
+    .login {
+      position: relative;
+      .user-current {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 12rem;
+        background-color: #fff;
+        border: 1px solid #f4f4f4;
+        padding: 4px 0;
+        border-radius: 0.5rem;
+        display: none;
+
+        .menu-item {
+          padding: 8px 16px;
+          display: block;
+          &:hover {
+            color: #69b1ff;
+            background-color: #f4f4f4;
+          }
+        }
+      }
+      &.show {
+        .menu {
+          display: block;
+        }
+      }
+    }
+
     .actionsUsers {
       display: flex;
       align-items: center;

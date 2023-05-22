@@ -50,18 +50,18 @@ const menu = [
   },
 ];
 function Header() {
-  const [isMenu, setIsMenu] = useState(false);
+  const [isMenu, setIsMenu] = useState('');
   const isLogin = true;
   useEffect(() => {
     // effect
     document.body.addEventListener('click', () => {
       console.log('click');
-      setIsMenu(false);
+      setIsMenu('');
     });
     return () => {
       // cleanup
       document.body.removeEventListener('click', () => {
-        setIsMenu(false);
+        setIsMenu('');
       });
     };
   }, []);
@@ -81,7 +81,7 @@ function Header() {
         <div>
           <ul className={styles.listNav}>
             <li
-              className={isMenu ? styles.show : ''}
+              className={isMenu === 'd' ? styles.show : ''}
               onClick={(e) => {
                 e.stopPropagation();
                 e.preventDefault();
@@ -90,7 +90,7 @@ function Header() {
               <button
                 className={styles.navItem + ' ' + styles.link}
                 onClick={(e) => {
-                  setIsMenu(true);
+                  setIsMenu('d');
                 }}
               >
                 Danh mục <MdOutlineKeyboardArrowDown />
@@ -136,19 +136,36 @@ function Header() {
           </ul>
         </div>
         {isLogin ? (
-          <div>
-            <button>
-              {/* <img src={'/no_avata.jpg'} width={32} height={32} alt="lỗi" /> */}
+          <div
+            className={`${styles.login}${
+              isMenu === 'u' ? ` ${styles.show}` : ''
+            }`}
+          >
+            <button
+              className={styles['user-current']}
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsMenu('u');
+              }}
+            >
+              <Image src={'/no_avata.jpg'} width={32} height={32} alt="lỗi" />
+              <span>Nam</span>
             </button>
-            <ul>
+            <ul className={styles.menu}>
               <li>
-                <Link href="/">Hồ sơ</Link>
+                <Link className={styles['menu-item']} href="/">
+                  Hồ sơ
+                </Link>
               </li>
               <li>
-                <Link href="/">Cài đặt</Link>
+                <Link className={styles['menu-item']} href="/">
+                  Cài đặt
+                </Link>
               </li>
               <li>
-                <Link href="/">Đăng Xuất</Link>
+                <Link className={styles['menu-item']} href="/">
+                  Đăng Xuất
+                </Link>
               </li>
             </ul>
           </div>

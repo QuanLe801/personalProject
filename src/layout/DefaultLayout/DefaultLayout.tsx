@@ -8,7 +8,7 @@ interface defaultLayout {
 
 function DefaultLayout({ children }: defaultLayout) {
   return (
-    <main>
+    <main className={styles.main}>
       <Header />
       <div className={styles.container}>{children}</div>
       <Footer />
