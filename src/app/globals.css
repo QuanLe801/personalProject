@@ -87,12 +87,6 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
@@ -104,4 +98,21 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-family: initial;
+  font-size: initial;
 }
