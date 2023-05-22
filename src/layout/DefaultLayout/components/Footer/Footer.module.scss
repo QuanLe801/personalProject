@@ -1,0 +1,51 @@
+.wrapper {
+  padding: 32px 16px 24px;
+  background-color: rgba(226, 232, 240, 1);
+
+  .body {
+    display: flex;
+    padding: 0 16px;
+    & > div {
+      width: 50%;
+    }
+    .group-icons {
+      display: flex;
+      align-items: center;
+      margin-top: 1.5rem;
+      .icon {
+        line-height: 0;
+        padding: 12px;
+        background: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+    }
+    .group-link {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 14px;
+      & > div {
+        & header {
+          text-transform: uppercase;
+        }
+        width: 25%;
+        ul {
+          li {
+            padding-top: 8px;
+          }
+        }
+      }
+      .link-route {
+      }
+    }
+  }
+  hr {
+    margin: 24px 0;
+  }
+  .by {
+    text-align: center;
+  }
+}
