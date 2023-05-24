@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  padding: 50px 0;
+
+  & > div {
+    width: 50%;
+  }
+  .avatar {
+    position: relative;
+    text-align: center;
+    .img-avatar {
+      border-radius: 50%;
+      border-top-left-radius: 12px;
+    }
+    .triangle-left-right {
+      border-bottom: 50px solid #f6ba35;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      height: 0;
+      left: 2%;
+      position: absolute;
+      top: 0;
+      transform: rotate(-45deg);
+      width: 0;
+    }
+    .smallbox-left-top {
+      background-image: radial-gradient(#41b294 10%, transparent 11%),
+        radial-gradient(#41b294 10%, transparent 11%);
+      background-size: 10px 10px;
+      height: 24%;
+      height: 70px;
+      left: 10%;
+      position: absolute;
+      top: 10%;
+      width: 16%;
+    }
+    .smallbox-right-top {
+      background-image: radial-gradient(#f6ba35 10%, transparent 11%),
+        radial-gradient(#f6ba35 10%, transparent 11%);
+      background-size: 10px 10px;
+      height: 24%;
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      transform: rotate(45deg);
+      width: 10%;
+    }
+    .smallbox-right-bottom {
+      background-image: radial-gradient(#f6ba35 10%, transparent 11%),
+        radial-gradient(#f6ba35 10%, transparent 11%);
+      background-size: 10px 10px;
+      bottom: 5%;
+      height: 24%;
+      left: 70%;
+      position: absolute;
+      width: 15%;
+    }
+  }
+  .body {
+    blockquote {
+      p {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 16px;
+        padding: 0 10px;
+        position: relative;
+        text-align: justify;
+        &::before {
+          color: #ed85ab;
+          content: open-quote;
+          font-family: fantasy;
+          font-size: 50px;
+          left: -4%;
+          position: absolute;
+          top: 0;
+        }
+        &::after {
+          bottom: -15%;
+          color: #ed85ab;
+          content: close-quote;
+          font-family: fantasy;
+          font-size: 50px;
+          position: absolute;
+          right: -4%;
+        }
+      }
+    }
+    .user {
+      color: #ed85ab;
+      font-size: 0.875rem;
+    }
+  }
+}

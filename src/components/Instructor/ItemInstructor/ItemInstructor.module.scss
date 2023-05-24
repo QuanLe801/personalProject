@@ -1,0 +1,38 @@
+.wrapper {
+  text-align: center;
+  padding: 16px 24px;
+  margin: 0 16px;
+  border-radius: 8px;
+  transition: all linear 0.3s;
+  &:hover {
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.13);
+  }
+  .avatar {
+    border-radius: 50%;
+  }
+  .des {
+    padding: 8px 0;
+    font-size: 0.875rem;
+  }
+  .review {
+    display: flex;
+    justify-content: center;
+    color: #f6ba35;
+
+    .review-point {
+      position: relative;
+
+      .star-point {
+        position: absolute;
+        left: 0;
+      }
+    }
+    .number-point {
+      font-size: 0.875rem;
+    }
+  }
+  .quantity-review {
+    font-size: 13px;
+    color: #8c8c8c;
+  }
+}
