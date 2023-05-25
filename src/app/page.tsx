@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import styles from './page.module.css';
-import Instructor from '@/components/Instructor';
-import StudentReviewTypify from '@/components/StudentReviewTypify';
+import StudentReviewTypifyContainer from './containers/StudentReviewTypifyContainer';
+import InstructorContainer from './containers/InstructorContainer/InstructorContainer';
 
 export default function Home() {
   return (
     <div>
-      <Instructor />
-      <StudentReviewTypify />
+      <InstructorContainer />
+      <StudentReviewTypifyContainer />
     </div>
   );
 }

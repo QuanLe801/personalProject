@@ -6,9 +6,7 @@ import 'swiper/css/pagination';
 import styles from './Instructor.module.scss';
 // import required modules
 import { Pagination } from 'swiper';
-import Image from 'next/image';
-import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import ItemInstructor from './ItemInstructor';
+import ItemInstructor from '@/components/ItemInstructor';
 const list = [
   {
     name: 'Nam',
@@ -81,7 +79,7 @@ const list = [
     img: '/instrutor1.jpg',
   },
 ];
-function Instructor() {
+function InstructorContainer() {
   return (
     <div className={styles.wrapper}>
       <p className={styles.title}>Giảng viên hàng đầu</p>
@@ -104,4 +102,4 @@ function Instructor() {
   );
 }
 
-export default Instructor;
+export default InstructorContainer;
