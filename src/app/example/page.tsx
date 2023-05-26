@@ -1,5 +1,7 @@
-function KKC() {
-  return <div>Page đâu</div>;
+import React from 'react';
+
+function Example() {
+  return <div>Testing router</div>;
 }
 
-export default KKC;
+export default Example;

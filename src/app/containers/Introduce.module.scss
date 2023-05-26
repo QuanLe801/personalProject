@@ -1,0 +1,36 @@
+.introduce_wrapper {
+  line-height: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 450px;
+  color: transparent;
+  padding-top: 130px;
+  padding-bottom: 180px;
+  .introduce_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(
+      to right,
+      #26a837 0%,
+      #126ae5 50%,
+      #340cb7 100%
+    );
+    -webkit-background-clip: text;
+    .block_text {
+      display: block;
+    }
+  }
+  .introduce_description {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.625;
+  }
+  .advise {
+    display: flex;
+    margin-top: 32px;
+  }
+}

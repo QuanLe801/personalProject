@@ -1,0 +1,28 @@
+.button_default {
+  border-radius: 0.25rem;
+  padding: 12px 48px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25rem;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #1677ff;
+  &:hover {
+    background-color: #1677ff;
+  }
+}
+
+.button_primary {
+  border-radius: 0.25rem;
+  padding: 12px 48px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25rem;
+  border: 1px solid #1677ff;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1677ff;
+  &:hover {
+    background-color: inherit;
+  }
+}
