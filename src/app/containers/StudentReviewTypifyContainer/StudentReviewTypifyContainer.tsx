@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './StudentReviewTypify.module.scss';
 
-function StudentReviewTypify() {
+function StudentReviewTypifyContainer() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.avatar}>
@@ -35,4 +35,4 @@ function StudentReviewTypify() {
   );
 }
 
-export default StudentReviewTypify;
+export default StudentReviewTypifyContainer;
