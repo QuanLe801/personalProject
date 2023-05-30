@@ -6,7 +6,7 @@ import { RouteList } from '@/utils/const';
 function RouteContainer() {
   return (
     <div className={styles.route_wrapper}>
-      <div style={{ marginRight: '20px', height: 'inherit' }}>
+      <div style={{ marginRight: '20px', height: 'inherit', width: '100%' }}>
         <Route
           title={RouteList[0].title}
           description={RouteList[0].description}
@@ -15,7 +15,7 @@ function RouteContainer() {
           big={RouteList[0].big}
         />
       </div>
-      <div style={{ marginRight: '20px', height: 'inherit' }}>
+      <div style={{ marginRight: '20px', height: 'inherit', width: '100%' }}>
         <Route
           title={RouteList[1].title}
           description={RouteList[1].description}
@@ -32,7 +32,7 @@ function RouteContainer() {
           big={RouteList[2].big}
         />
       </div>
-      <div style={{ height: 'inherit' }}>
+      <div style={{ height: 'inherit', width: '100%' }}>
         <Route
           title={RouteList[3].title}
           description={RouteList[3].description}
