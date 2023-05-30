@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import styles from './page.module.css';
-import IntroduceContainer from './containers/IntroduceContainer';
-import StudentReviewTypifyContainer from './containers/StudentReviewTypifyContainer';
-import InstructorContainer from './containers/InstructorContainer/InstructorContainer';
+import InstructorContainer from '@/containers/InstructorContainer/InstructorContainer';
+import IntroduceContainer from '@/containers/IntroduceContainer/IntroduceContainer';
+import RouteContainer from '@/containers/RouteContainer/RouteContainer';
+import StudentReviewTypifyContainer from '@/containers/StudentReviewTypifyContainer/StudentReviewTypifyContainer';
 
 export default function Home() {
   return (
     <div>
       <IntroduceContainer />
+      <RouteContainer />
       <InstructorContainer />
       <StudentReviewTypifyContainer />
     </div>

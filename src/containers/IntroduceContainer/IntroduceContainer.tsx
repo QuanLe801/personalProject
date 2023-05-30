@@ -13,9 +13,9 @@ function IntroduceContainer() {
         Trở thành lập trình chuyên nghiệp tại cybersoft
       </div>
       <div className={styles.advise}>
-        <Button title="Xem khóa học" variant="primary" />
+        <Button variant="primary">Xem khóa học</Button>
         <span style={{ marginRight: '16px' }}></span>
-        <Button title="Tư vấn học" variant="default" />
+        <Button variant="default">Tư vấn học</Button>
       </div>
     </div>
   );

@@ -2,18 +2,18 @@ import React from 'react';
 import styles from './Button.module.scss';
 
 interface ButtonInterface {
-  title: string;
   variant: 'default' | 'primary';
+  children?: React.ReactNode;
 }
 
-function Button({ title, variant }: ButtonInterface) {
+function Button({ variant, children }: ButtonInterface) {
   return (
     <div
       className={
         variant == 'default' ? styles.button_default : styles.button_primary
       }
     >
-      {title}
+      {children}
     </div>
   );
 }
