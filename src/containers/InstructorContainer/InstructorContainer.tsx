@@ -7,6 +7,7 @@ import styles from './Instructor.module.scss';
 // import required modules
 import { Pagination } from 'swiper';
 import ItemInstructor from '@/components/ItemInstructor';
+import ContainerWrapper from '@/components/ContainerWapper/ContainerWrapper';
 const list = [
   {
     name: 'Nam',
@@ -81,24 +82,26 @@ const list = [
 ];
 function InstructorContainer() {
   return (
-    <div className={styles.wrapper}>
-      <p className={styles.title}>Giảng viên hàng đầu</p>
-      <Swiper
-        pagination={{
-          clickable: true,
-        }}
-        slidesPerView={5}
-        loop={true}
-        modules={[Pagination]}
-        className={styles.slides}
-      >
-        {list.map((item, index) => (
-          <SwiperSlide key={index}>
-            <ItemInstructor item={item} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <ContainerWrapper>
+      <div className={styles.wrapper}>
+        <p className={styles.title}>Giảng viên hàng đầu</p>
+        <Swiper
+          pagination={{
+            clickable: true,
+          }}
+          slidesPerView={5}
+          loop={true}
+          modules={[Pagination]}
+          className={styles.slides}
+        >
+          {list.map((item, index) => (
+            <SwiperSlide key={index}>
+              <ItemInstructor item={item} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </ContainerWrapper>
   );
 }
 
