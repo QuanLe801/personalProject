@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Route.module.scss';
 import Route from '@/components/RouteComponent/Route';
 import { RouteList } from '@/utils/const';
-import ContainerWrapper from '@/components/ContainerWapper';
+import ContainerWrapper from '@/components/ContainerWrapper';
 
 function RouteContainer() {
   return (

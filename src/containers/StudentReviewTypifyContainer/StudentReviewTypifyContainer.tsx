@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './StudentReviewTypify.module.scss';
-import ContainerWrapper from '@/components/ContainerWapper';
+import ContainerWrapper from '@/components/ContainerWrapper';
 
 function StudentReviewTypifyContainer() {
   return (

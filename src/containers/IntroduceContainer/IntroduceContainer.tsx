@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Introduce.module.scss';
 import Button from '@/components/Button/Button';
-import ContainerWrapper from '@/components/ContainerWapper';
+import ContainerWrapper from '@/components/ContainerWrapper';
 
 function IntroduceContainer() {
   return (

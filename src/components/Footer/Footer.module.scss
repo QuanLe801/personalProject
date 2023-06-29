@@ -30,11 +30,16 @@
       & > div {
         & header {
           text-transform: uppercase;
+          color: #64748b;
         }
         width: 25%;
         ul {
           li {
             padding-top: 8px;
+            & > a {
+              font-weight: 500;
+              color: rgb(71, 85, 105);
+            }
           }
         }
       }
@@ -47,5 +52,8 @@
   }
   .by {
     text-align: center;
+    a {
+      color: #64748b;
+    }
   }
 }

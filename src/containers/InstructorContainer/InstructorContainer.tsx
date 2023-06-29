@@ -7,7 +7,7 @@ import styles from './Instructor.module.scss';
 // import required modules
 import { Pagination } from 'swiper';
 import ItemInstructor from '@/components/ItemInstructor';
-import ContainerWrapper from '@/components/ContainerWapper/ContainerWrapper';
+import ContainerWrapper from '@/components/ContainerWrapper/ContainerWrapper';
 const list = [
   {
     name: 'Nam',
@@ -89,6 +89,7 @@ function InstructorContainer() {
           pagination={{
             clickable: true,
           }}
+          slidesPerGroup={3}
           slidesPerView={5}
           loop={true}
           modules={[Pagination]}
