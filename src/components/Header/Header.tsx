@@ -10,45 +10,8 @@ import { FcSmartphoneTablet } from 'react-icons/fc';
 import { FiSearch } from 'react-icons/fi';
 import { BsCodeSlash } from 'react-icons/bs';
 import { useState, useEffect } from 'react';
+import { menuHeader } from '@/utils/const';
 
-const menu = [
-  {
-    title: 'Lập trình BackEnd',
-    des: 'Bootcamp - Lập trình BackEnd từ Zero đến có việc',
-    icon: FaDatabase,
-    href: '/',
-  },
-  {
-    title: 'Thiết kế web',
-    des: 'Bootcamp - Từ Zero đến có việc',
-    icon: HiOutlineCursorClick,
-    href: '/',
-  },
-  {
-    title: 'Lập trình di động ',
-    des: 'Bootcamp - Lập trình di động từ Zero đến có việc',
-    icon: FcSmartphoneTablet,
-    href: '/',
-  },
-  {
-    title: 'Lập trình Front End',
-    des: 'Bootcamp - Lập trình Front End từ Zero đến có việc',
-    icon: BsCodeSlash,
-    href: '/',
-  },
-  {
-    title: 'Lập trình Full Stack',
-    des: 'Bootcamp - Lập trình Full Stack từ Zero đến có việc',
-    icon: FaLaptopCode,
-    href: '/',
-  },
-  {
-    title: 'Tư duy lập trình',
-    des: 'Bootcamp - Tư duy lập trình từ Zero đến có việc',
-    icon: MdSmartToy,
-    href: '/',
-  },
-];
 function Header() {
   const [isMenu, setIsMenu] = useState('');
   const isLogin = true;
@@ -97,12 +60,12 @@ function Header() {
               </button>
 
               <ul className={styles['drop-downlist']}>
-                {menu.map((item, index) => {
+                {menuHeader.map((item, index) => {
                   const Icon = item.icon;
                   return (
                     <li key={index} className={styles['drop-downlist-item']}>
                       <Link
-                        href={item.href}
+                        href={'/categorycourse/' + item.id}
                         className={styles['drop-downlist-item-link']}
                       >
                         <div className={styles['item-icon']}>

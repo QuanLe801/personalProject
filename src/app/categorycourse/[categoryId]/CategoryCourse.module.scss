@@ -1,0 +1,26 @@
+.wrapper {
+  padding: 50px 0;
+  .content {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 0 20px;
+    width: 1240px;
+    .title {
+      border: 2px solid #e4e4e4;
+      border-radius: 50px;
+      cursor: default;
+      display: inline-flex;
+      align-items: center;
+      font-weight: 600;
+      margin-bottom: 30px;
+      padding: 12px 10px;
+      transition: all 0.5s;
+      .icon {
+        display: flex;
+        align-items: center;
+        color: #f6ba35;
+        padding-right: 12px;
+      }
+    }
+  }
+}

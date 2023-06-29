@@ -1,3 +1,10 @@
+import { FaDatabase } from 'react-icons/fa';
+import { HiOutlineCursorClick } from 'react-icons/hi';
+import { FaLaptopCode } from 'react-icons/fa';
+import { FcSmartphoneTablet } from 'react-icons/fc';
+import { BsCodeSlash } from 'react-icons/bs';
+import { MdSmartToy } from 'react-icons/md';
+
 export const RouteList = [
   {
     title: 'KHÓA HỌC',
@@ -115,5 +122,51 @@ export const ListCourse = [
     realPrice: 400000,
     rate: 4.9,
     rateCount: 7840,
+  },
+];
+
+export const numberCountUp = {
+  studentsNumber: 99999,
+  teacherNumber: 5000,
+  timetableNumber: 30000,
+  hourglassNumber: 3485685,
+};
+
+export const menuHeader = [
+  {
+    id: 'BackEnd',
+    title: 'Lập trình BackEnd',
+    des: 'Bootcamp - Lập trình BackEnd từ Zero đến có việc',
+    icon: FaDatabase,
+  },
+  {
+    id: 'web',
+    title: 'Thiết kế web',
+    des: 'Bootcamp - Từ Zero đến có việc',
+    icon: HiOutlineCursorClick,
+  },
+  {
+    id: 'mobile',
+    title: 'Lập trình di động ',
+    des: 'Bootcamp - Lập trình di động từ Zero đến có việc',
+    icon: FcSmartphoneTablet,
+  },
+  {
+    id: 'frontend',
+    title: 'Lập trình Front End',
+    des: 'Bootcamp - Lập trình Front End từ Zero đến có việc',
+    icon: BsCodeSlash,
+  },
+  {
+    id: 'fullstack',
+    title: 'Lập trình Full Stack',
+    des: 'Bootcamp - Lập trình Full Stack từ Zero đến có việc',
+    icon: FaLaptopCode,
+  },
+  {
+    id: 'brain',
+    title: 'Tư duy lập trình',
+    des: 'Bootcamp - Tư duy lập trình từ Zero đến có việc',
+    icon: MdSmartToy,
   },
 ];
